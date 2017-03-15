@@ -11,14 +11,14 @@ import pkgLibrary.BookException;
 public class BookTest {
 	@Test
 	public void Equals1(){
-		Book bk = new Book("bk099", "Me", "Thish", "Goodness", 100.00, new Date(1, 2, 3, 4, 5), "Pure Goodness");
-		Book mcDonalds = new Book("bk099", "Me", "Thish", "Goodness", 100.00, new Date(1, 2, 3, 4, 5), "Pure Goodness");
+		Book bk = new Book("bk097", "Me", "Thish", "Goodness", 100.00, new Date(1, 2, 3, 4, 5), "Pure Goodness");
+		Book mcDonalds = new Book("bk097", "Me", "Thish", "Goodness", 100.00, new Date(1, 2, 3, 4, 5), "Pure Goodness");
 		assertTrue(bk.equals(mcDonalds));
 	}
 	
 	@Test
 	public void Equals2(){
-		Book bk = new Book("bk099", "Me", "Thish", "Goodness", 100.00, new Date(1, 2, 3, 4, 5), "Pure Goodness");
+		Book bk = new Book("bk097", "Me", "Thish", "Goodness", 100.00, new Date(1, 2, 3, 4, 5), "Pure Goodness");
 		Book wendys = new Book("bk098", "Me", "Thish", "Goodness", 100.00, new Date(1, 2, 3, 4, 5), "Pure Goodness");
 		assertFalse(bk.equals(wendys));
 	}
@@ -31,8 +31,8 @@ public class BookTest {
 	
 	@Test
 	public void GetBook2() {
-		Book bk = new Book("bk105");
-		assertNotEquals(bk.GetBook("id099"), bk);
+		Book bk = new Book("bk110");
+		assertNotEquals(bk.GetBook("id110"), bk);
 	}
 	
 	@Test
