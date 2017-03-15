@@ -141,13 +141,4 @@
         <publish_date>2001-04-16T00:00:00-04:00</publish_date>
         <title>Visual Studio 7: A Comprehensive Guide</title>
     </book>
-    <book id="bk099">
-        <author>Me</author>
-        <cost>80.0</cost>
-        <description>Pure Goodness</description>
-        <genre>Goodness</genre>
-        <price>100.0</price>
-        <publish_date>1901-03-03T04:05:00-05:00</publish_date>
-        <title>Thish</title>
-    </book>
 </catalog>
