@@ -78,13 +78,14 @@ public class Book {
 			Catalog cat = ReadXMLFile();
 			ArrayList<Book>tempList = cat.getBooks();
 			for(Book bk : cat.getBooks())
-				if(bk.getId() == id)
+				if(bk.getId().equals(id))
 					throw new BookException(this);
 			tempList.add(book);
 			cat.setBooks(tempList);
 			WriteXMLFile(cat);
 		}catch(BookException e){
 			System.out.println("Book id " + id + " is already in catalog.");
+			return;
 		}
 	}
 
